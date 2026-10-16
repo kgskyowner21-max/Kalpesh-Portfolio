@@ -1,0 +1,100 @@
+KALPESH GOSWAMI PORTFOLIO + WEBSITE BUILDER (COMBINED)
+=======================================================
+Is folder me:
+  index.html    aapki portfolio website (dark glassmorphism theme, bilkul aapki HTML file jaisi)
+  admin.html    aapka editor (is me aapki theme ke saare sections editable hain)
+  content.json  portfolio ka saara content (text, links, colours)
+  SETUP.txt     ye guide
+
+PEHLE DEKHNA HAI? index.html ko double-click karke browser me kholein - preview dikh jayega.
+(Live hone ke baad website content.json se chalti hai, admin se jo Publish karenge wahi dikhega.)
+
+LIVE KARNE KE STEPS: neeche "GITHUB PAR WEBSITE LIVE KARNE KA GUIDE" wale Step 1 se 5 follow karein.
+Upload karne ki files: index.html, admin.html, content.json.
+
+EDITOR ME KYA KYA BADAL SAKTE HAIN
+- Kisi bhi text par click karke seedha type karein (heading, paragraph, button ka naam, cards, pills, footer, sab).
+- LINK BADALNA: button / card / footer link ke text par click karein, phir upar toolbar me "Link" dabayein
+  aur URL daalein (https://..., mailto:abc@gmail.com, tel:+91..., ya #projects jaisa section link).
+- PROJECT CARD CLICKABLE: card ke andar kisi text par click karke "Link" dabayein aur live demo ka URL daalein.
+  URL daalte hi card live site par poora clickable ho jata hai.
+- PHOTO: project card me "+ photo" par click karke image upload karein. Hatane ke liye photo par click karke
+  (file window band karein) phir toolbar me "Remove photo" dabayein.
+- NAYA CARD / ITEM: block par click karke toolbar me "+ Item" (copy banata hai) ya "- Item" (aakhri hata deta hai).
+  Projects, Services, Expertise, About pills, Hero tags aur Footer links me kaam karta hai.
+- GRADIENT TEXT: heading ke kuch shabd select karke "Gradient text" dabayein (jaise "experiences.").
+- SECTION ID: block select karke "Section ID" - isse menu link (#about) us section tak scroll karta hai.
+- SECTIONS ORDER: block ko "Move" handle se drag karein, ya toolbar ke up/down, Duplicate, Delete use karein.
+- NAYE SECTIONS: right side "Insert" tab > "Portfolio blocks" se naye sections jod sakte hain.
+- MENU, LOGO, TAB TITLE, TOP BUTTON: upar "Settings" me - Website name, Browser tab title, Logo letters (KG),
+  menu links (ek line me "Name | #section"), top button ka text/link.
+- COLOURS: right side "Themes" tab me 7 colours badal sakte hain. Desktop / Tablet / Mobile buttons se preview dekhein.
+- Kaam ke baad upar "Publish" dabana na bhulein.
+
+----------------------------------------------------------------------------------------------------
+
+GITHUB PAR WEBSITE LIVE KARNE KA GUIDE
+======================================
+Is folder me:
+  index.html    public website (customers yahi dekhte hain)
+  content.json  website ka starter content
+  admin.html    aapka editor
+  SETUP.txt     ye guide
+
+Firebase ya kisi aur service ki zarurat nahi. Aapka sab data (text, pages, photos)
+aapki apni GitHub repository me save hota hai. GitHub me purane versions bhi bache
+rehte hain, to data safe rehta hai. Kisi bhi laptop par admin.html kholkar apni
+GitHub repository aur token daalein, aur aapka last update wahin milega.
+
+STEP 1  github.com par login karein. New repository banayein (Public).
+        Naam jaise: my-website
+STEP 2  "uploading an existing file" se in 3 files ko upload karein:
+        index.html, admin.html, content.json   > Commit changes.
+STEP 3  Repository me Settings > Pages > Branch: main, folder: /(root) > Save.
+        1-2 minute baad link milega:  https://username.github.io/my-website/
+        Ye link customers ko bhej sakte hain.
+STEP 4  EDITOR KI CHABI (TOKEN) BANAYEIN - sirf ek baar:
+        GitHub par apni profile photo > Settings > (neeche) Developer settings >
+        Personal access tokens > Fine-grained tokens > Generate new token.
+          - Token name: website-editor
+          - Expiration: sabse lambi chunein (jaise 1 year)
+          - Repository access: "Only select repositories" > apni my-website repo
+          - Permissions > Repository permissions > Contents: "Read and write"
+        Generate token dabayein. Jo github_pat_... likha aaye use COPY karke
+        kisi private jagah rakh lein (ye dobara nahi dikhega). Ye token aapke
+        password jaisa hai, kisi ko na dein.
+STEP 5  Editor kholein:  https://username.github.io/my-website/admin.html
+        Repository me  username/my-website  likhein, token paste karein,
+        "Open editor" dabayein.
+
+WEBSITE EDIT KARNA
+- Pages, text, photos, colours badlein. Photos upload hote hi GitHub me chali jati hain.
+- Badlav pehle sirf us laptop par rehte hain. Upar "Publish" dabate hi wo GitHub me
+  save ho jate hain aur 1-2 minute me live website badal jati hai.
+  Isliye kaam karke Publish zaroor dabayein, tabhi data dusre laptop par milega.
+
+DUSRE LAPTOP PAR
+admin.html kholein > wahi repository aur apna token daalein > Open editor.
+Aapka last published update wahan dikh jayega. Kaam ke baad Sign out karein
+(Settings > Sign out), taaki token us laptop se hat jaye.
+
+APNA DOMAIN (jaise yourcompany.com)
+Domain ki DNS me 4 A records (Host @): 185.199.108.153, 185.199.109.153,
+185.199.110.153, 185.199.111.153 aur CNAME (Host www) -> username.github.io.
+Phir GitHub: Settings > Pages > Custom domain me domain likhein, aur
+"Enforce HTTPS" ON karein. Domain badalne ke baad editor me repository
+wahi rehti hai (username/my-website), kuch badalna nahi.
+
+GOOGLE PAR COMPANY KA NAAM
+Editor me Settings > Website name me company ka naam aur short description likhein.
+search.google.com/search-console par apni website submit karein. Google par aane me
+din se hafte lag sakte hain.
+
+DHYAN DEN
+- Free GitHub Pages ke liye repository Public honi chahiye, isliye website ka
+  published content (jo sab customers dekhte hi hain) public rehta hai.
+- admin.html ka link public hai, par token ke bina koi kuch badal nahi sakta.
+- Token kho jaye ya expire ho jaye to naya bana lein (Step 4). Data par asar nahi padta.
+- Do jagah se ek saath edit na karein, warna aakhri Publish jeetta hai.
+- Maine ye code nakli GitHub par test kiya hai, asli GitHub par nahi. Koi error
+  aaye to uska message mujhe bhej dein.
